@@ -32,13 +32,13 @@ class DetailedViewsScreenActivity : AppCompatActivity() {
         var totalTemp = 0
         for (i in days.indices) {
             weatherDetails.append("${days[i]}: Minimum Temperatures: ${minTemps[i]} celsius, Maximum Temperatures: " +
-                    "${maxTemps[i]} celcius, The Weather conditions are: ${weatherNotes[i]}\n")
+                    "${maxTemps[i]} celsius, The Weather conditions are: ${weatherNotes[i]}\n")
             totalTemp += minTemps[i] + maxTemps[i]
         }
-        val averageScreenTime = if (days.isNotEmpty()) totalTemp / days.size else 0
+        val averageTemp= if (days.isNotEmpty()) totalTemp / days.size else 0
 
         weatherDetailsTxt.text = weatherDetails.toString()
-        averageTempTxt.text = "The average temperature given the above data is: $averageScreenTime celsius"
+        averageTempTxt.text = "The average temperature given the above data is: $averageTemp celsius"
 
         backButton.setOnClickListener {
             finish()

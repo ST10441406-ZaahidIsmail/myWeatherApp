@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
 
 
-    private lateinit var dayEditText: EditText
+    private lateinit var dayEditText: EditText    //Declarations, some set as var for versatility
     private lateinit var minTempEditText: EditText
     private lateinit var maxTempEditText: EditText
     private lateinit var weatherNotesEditText: EditText
@@ -32,12 +32,12 @@ class MainActivity : AppCompatActivity() {
 
         val addButton: Button = findViewById(R.id.addBtn)
         val clearButton: Button = findViewById(R.id.clearBtn)
-        val detailedViewButton: Button = findViewById(R.id.weatherDetailsBtn)
+        val detailedViewButton: Button = findViewById(R.id.weatherDetailsBtn)   //Declarations of buttons
         val exitButton2: Button = findViewById(R.id.exit2Btn)
 
-        exitButton2.setOnClickListener {  //exit button used to quit the app
+        //exitButton2.setOnClickListener {  //exit button used to quit the app
             finish()
-        }
+       // }
 
 
         addButton.setOnClickListener {
@@ -48,11 +48,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         detailedViewButton.setOnClickListener {
-            val intent = Intent(this, DetailedViewsScreenActivity::class.java)
-            intent.putStringArrayListExtra("Days", days)
-            intent.putIntegerArrayListExtra("MinTemperature", minTemps)
-            intent.putIntegerArrayListExtra("MaxTemperature", maxTemps)
-            intent.putStringArrayListExtra("WeatherNotes", weatherNotes)
+            val intent: Intent = Intent(this, DetailedViewsScreenActivity::class.java)  //intents used to display data on the next activity/screen
+            intent.putStringArrayListExtra("days", days)
+            intent.putIntegerArrayListExtra("minTemps", minTemps)
+            intent.putIntegerArrayListExtra("maxTemps", maxTemps)
+            intent.putStringArrayListExtra("weatherNotes", weatherNotes)
             startActivity(intent)
         }
     }
@@ -60,10 +60,10 @@ class MainActivity : AppCompatActivity() {
     private fun addWeather() {
         val day = dayEditText.text.toString()
         val minTemp = minTempEditText.text.toString().toIntOrNull()
-        val maxTemp = maxTempEditText.text.toString().toIntOrNull()
+        val maxTemp = maxTempEditText.text.toString().toIntOrNull()  //since tempreture is a number, it is an integer and can ne null
         val weatherType = weatherNotesEditText.text.toString()
 
-        if (day.isNotEmpty() && minTemp != null && maxTemp != null) {
+        if (day.isNotEmpty() && minTemp != null && maxTemp != null) {  //if statment with and logical operators
             days.add(day)
             minTemps.add(minTemp)
             maxTemps.add(maxTemp)

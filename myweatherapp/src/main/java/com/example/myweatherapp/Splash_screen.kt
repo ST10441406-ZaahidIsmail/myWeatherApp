@@ -18,7 +18,7 @@ class Splash_screen : AppCompatActivity() {
 
         startButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)                    //intent is used to moved onto next screenn when start button is pressed
+            startActivity(intent)                    //intent is used to moved onto next screen when start button is pressed
             finish()
         }
 
