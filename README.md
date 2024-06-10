@@ -112,6 +112,8 @@ Below are images of the application with error messages
 ![Screenshot 2024-06-10 143002](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/436b4dcd-ceee-41fb-a9de-880d9fd7ebfa)
 ![Screenshot 2024-06-10 142930](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/2feca5f1-eea5-4148-9854-e92babb8e828)
 ![Screenshot 2024-06-10 140755](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/101c3144-5846-4ff0-8465-bc49b9bfb8bb)
+![Screenshot 2024-06-10 153628](https://github.com/VCCT-IMAD5112-2024-G2/myWEATHER_APPLICATION/assets/164514640/f0d9cd45-14a2-4bdf-8de9-c8086b32f1e8)
+
 
 Below are screenshots of the code/logic behind the application:
 ![Screenshot 2024-06-10 142055](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/0ba9659f-b147-4b23-8713-30bf34da03c8)
