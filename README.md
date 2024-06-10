@@ -1,6 +1,6 @@
 Name: Zaahid Ismail
 Student Number: ST10441406
-Welcome to the Weather App. This Android application allows users to input weather data and display it across three different screens: the Splash Screen, the Main Screen, and the Detailed View Screen. The app provides detailed weather results and calculates the average temperature.
+Welcome to the Weather App. This Android application allows users to input weather data and display it across a specific screen whihc is the detaled views screen, the app consists of the following screens: the Splash Screen, the Main Screen, and the Detailed View Screen. The app provides detailed weather results and calculates the average temperature.
 
 Features
 Splash Screen: The introductory screen that appears when the app is launched.
