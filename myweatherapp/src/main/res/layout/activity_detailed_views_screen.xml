@@ -12,28 +12,30 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="102dp" />
+        android:layout_height="55dp" />
 
     <TextView
         android:id="@+id/weatherDetailsTxt"
         android:layout_width="match_parent"
-        android:layout_height="328dp"
+        android:layout_height="250dp"
         android:layout_gravity="center_horizontal"
         android:fontFamily="@font/alfa_slab_one"
         android:gravity="center_horizontal"
         android:inputType="text|textImeMultiLine"
+        android:isScrollContainer="false"
         android:text="Weather Details:"
+        android:textAlignment="gravity"
         android:textColor="#FFD600"
-        android:textSize="22sp" />
+        android:textSize="12sp" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="12dp" />
+        android:layout_height="49dp" />
 
     <TextView
         android:id="@+id/averageTempTxt"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="209dp"
         android:layout_gravity="center_horizontal"
         android:fontFamily="@font/alfa_slab_one"
         android:gravity="center_horizontal"
@@ -44,7 +46,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="47dp" />
+        android:layout_height="114dp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
