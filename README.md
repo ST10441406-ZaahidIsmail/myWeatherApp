@@ -1,3 +1,4 @@
+
 Name: Zaahid Ismail
 Student Number: ST10441406
 Welcome to the Weather App. This Android application allows users to input weather data and display it across a specific screen whihc is the detaled views screen, the app consists of the following screens: the Splash Screen, the Main Screen, and the Detailed View Screen. The app provides detailed weather results and calculates the average temperature.
@@ -32,6 +33,7 @@ View Detailed Data: On the detailed view screen, review the entered data and see
 To access the repository, click on this link: https://github.com/ST10441406-ZaahidIsmail/myWeatherApp
 
 Psuedocode of the Application:
+start
 SplashActivity:
  Display Splash Screen with app name, my name, student number, and logo
  If Start button clicked:
@@ -103,3 +105,22 @@ DetailedViewActivity:
  Display averageTemp in averageTextView
  On backButton click:
  Finish current activity and navigate back to MainActivity
+stop
+Below are images of the application with error messages
+![Screenshot 2024-06-10 143055](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/8ccdaa79-30f8-4dcc-b3c3-dbd69922c96a)
+![Screenshot 2024-06-10 143026](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/3abcbd2b-07c0-48ac-a151-3b313fcebb68)
+![Screenshot 2024-06-10 143002](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/436b4dcd-ceee-41fb-a9de-880d9fd7ebfa)
+![Screenshot 2024-06-10 142930](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/2feca5f1-eea5-4148-9854-e92babb8e828)
+![Screenshot 2024-06-10 140755](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/101c3144-5846-4ff0-8465-bc49b9bfb8bb)
+![Screenshot 2024-06-10 153628](https://github.com/VCCT-IMAD5112-2024-G2/myWEATHER_APPLICATION/assets/164514640/f0d9cd45-14a2-4bdf-8de9-c8086b32f1e8)
+
+
+Below are screenshots of the code/logic behind the application:
+![Screenshot 2024-06-10 142055](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/0ba9659f-b147-4b23-8713-30bf34da03c8)
+![Screenshot 2024-06-10 143507](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/7f83d7ab-0f4a-4860-ac3a-f6b5fdc99a6a)
+![Screenshot 2024-06-10 143500](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/1e6a9ba3-cb90-4ad0-b74f-9851c4b2dc5c)
+![Screenshot 2024-06-10 143451](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/8ebe5cea-e042-4169-b5ac-4dcc733d08f7)
+![Screenshot 2024-06-10 143444](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/5b5a43b9-5e93-46a6-83cf-a7081bd89561)
+![Screenshot 2024-06-10 143437](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/672631b9-95bd-4083-acf5-194f14e9ddcd)
+![Screenshot 2024-06-10 143428](https://github.com/ST10441406-ZaahidIsmail/myWeatherApp/assets/164514640/74c227b5-cb61-42ec-a276-c13eddb460f7)
+
