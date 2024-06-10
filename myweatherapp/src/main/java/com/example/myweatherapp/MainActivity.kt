@@ -35,9 +35,9 @@ class MainActivity : AppCompatActivity() {
         val detailedViewButton: Button = findViewById(R.id.weatherDetailsBtn)   //Declarations of buttons
         val exitButton2: Button = findViewById(R.id.exit2Btn)
 
-        //exitButton2.setOnClickListener {  //exit button used to quit the app
+        exitButton2.setOnClickListener {  //exit button used to quit the app
             finish()
-       // }
+        }
 
 
         addButton.setOnClickListener {
@@ -60,10 +60,10 @@ class MainActivity : AppCompatActivity() {
     private fun addWeather() {
         val day = dayEditText.text.toString()
         val minTemp = minTempEditText.text.toString().toIntOrNull()
-        val maxTemp = maxTempEditText.text.toString().toIntOrNull()  //since tempreture is a number, it is an integer and can ne null
+        val maxTemp = maxTempEditText.text.toString().toIntOrNull()  //since temperature is a number, it is an integer and can ne null
         val weatherType = weatherNotesEditText.text.toString()
 
-        if (day.isNotEmpty() && minTemp != null && maxTemp != null) {  //if statment with and logical operators
+        if (day.isNotEmpty() && minTemp != null && maxTemp != null) {  //if statement with and logical operators
             days.add(day)
             minTemps.add(minTemp)
             maxTemps.add(maxTemp)

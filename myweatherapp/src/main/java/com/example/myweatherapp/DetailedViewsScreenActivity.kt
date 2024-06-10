@@ -19,20 +19,21 @@ class DetailedViewsScreenActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_detailed_views_screen)
 
-        weatherDetailsTxt = findViewById(R.id.weatherDetailsTxt)
+        weatherDetailsTxt = findViewById(R.id.weatherDetailsTxt)  //initialisation of variables
         averageTempTxt = findViewById(R.id.averageTempTxt)
         backButton = findViewById(R.id.backBtn)
 
         val days = intent.getStringArrayListExtra("Days") ?: arrayListOf()
-        val minTemps= intent.getIntegerArrayListExtra("MinTemps") ?: arrayListOf()
+        val minTemps= intent.getIntegerArrayListExtra("MinTemps") ?: arrayListOf()  //intents to get the arrays over from previous activity
         val maxTemps = intent.getIntegerArrayListExtra("MaxTemps") ?: arrayListOf()
         val weatherNotes = intent.getStringArrayListExtra("WeatherNotes") ?: arrayListOf()
 
         val weatherDetails = StringBuilder()
-        var totalTemp = 0
-        for (i in days.indices) {
+        var totalTemp = 0 //initialising the counter/sum variable for the loop to 0
+        for (i in days.indices) {  //for loop used to add the days
             weatherDetails.append("${days[i]}: Minimum Temperatures: ${minTemps[i]} celsius, Maximum Temperatures: " +
-                    "${maxTemps[i]} celsius, The Weather conditions are: ${weatherNotes[i]}\n")
+                    "${maxTemps[i]} celsius, The Weather conditions are: ${weatherNotes[i]}\n") //to get the average we determine the
+                                                                                          //sum of the min and max temperatures and divide by number of days
             totalTemp += minTemps[i] + maxTemps[i]
         }
         val averageTemp= if (days.isNotEmpty()) totalTemp / days.size else 0
