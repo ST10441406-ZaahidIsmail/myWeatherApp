@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pikaso_texttoimage_pixel_art_stunning_4k_backdrop_for_a_weather_app_s"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".DetailedViewsScreenActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="102dp" />
+
+    <TextView
+        android:id="@+id/weatherDetailsTxt"
+        android:layout_width="match_parent"
+        android:layout_height="328dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center_horizontal"
+        android:inputType="text|textImeMultiLine"
+        android:text="Weather Details:"
+        android:textColor="#FFD600"
+        android:textSize="22sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <TextView
+        android:id="@+id/averageTempTxt"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center_horizontal"
+        android:inputType="text|textMultiLine"
+        android:text="Average Temp:"
+        android:textColor="#FFD600"
+        android:textSize="22sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="47dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="248dp"
+            android:layout_height="101dp"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="89dp"
+            android:layout_marginBottom="59dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Back"
+            android:textColor="#FFD600"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
