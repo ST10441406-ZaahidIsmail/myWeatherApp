@@ -1,6 +1,6 @@
 Name: Zaahid Ismail
 Student Number: ST10441406
-Welcome to the Weather App! This Android application allows users to input weather data and display it across three different screens: the Splash Screen, the Main Screen, and the Detailed View Screen. The app provides detailed weather results and calculates the average temperature.
+Welcome to the Weather App. This Android application allows users to input weather data and display it across three different screens: the Splash Screen, the Main Screen, and the Detailed View Screen. The app provides detailed weather results and calculates the average temperature.
 
 Features
 Splash Screen: The introductory screen that appears when the app is launched.
@@ -29,4 +29,77 @@ Input Weather Data: On the main screen, fill in the necessary weather data such 
 Submit Data: Press the submit button to save the data and navigate to the detailed view screen.
 View Detailed Data: On the detailed view screen, review the entered data and see the calculated average temperature.
 
-To access the repository, click on this link: 
+To access the repository, click on this link: https://github.com/ST10441406-ZaahidIsmail/myWeatherApp
+
+Psuedocode of the Application:
+SplashActivity:
+ Display Splash Screen with app name, my name, student number, and logo
+ If Start button clicked:
+ Navigate to MainActivity
+ If Exit button clicked:
+ Close the app
+
+MainActivity:
+ Initialize days as ArrayList<String>
+ Initialize minTemp as ArrayList<Int>
+ Initialize maxTemp as ArrayList<Int>
+ Initialize weatherNotes as ArrayList<String>
+ 
+ Initialize dayEditText
+ Initialize minTempEditTxt
+ Initialize maxTempEditText
+ Initialize weatherNotesEditText
+ Initialize addButton
+ Initialize clearButton
+ Initialize detailedViewButton
+ Initialize exitButton2
+ On exitbutton2 click:
+ Close the app
+ On addButton click:
+ Retrieve date from dayEditText
+ Retrieve minTemp from minTempEditText
+ Retrieve maxTemp from maxTempEditText
+ Retrieve weatherNotes from weatherNotesEditText
+
+ If all inputs are valid:
+ Add day to days
+ Add minTemp to minTemps
+ Add maxTemps to maxTemps
+ Add weatherType to weatherNotes
+
+ Clear input fields
+ Show success message
+ Else:
+ Show error message
+ On clearButton click:
+ Clear days
+ Clear minTemps
+ Clear maxTemps
+ Clear WeatherNotes
+ Show data cleared message
+ On detailedViewButton click:
+ Create Intent to navigate to DetailedViewActivity
+ Pass days, minTemps, maxTemps, weatherNotes to DetailedViewActivity
+ Start DetailedViewActivity
+
+DetailedViewActivity:
+ Initialize weatherDetailsTextView
+ Initialize averageTempTextView
+ Retrieve days from Intent
+ Retrieve minTemps from Intent
+ Retrieve maxTemps from Intent
+ Retrieve weatherNotes from Intent
+ Initialize weatherDetails as StringBuilder
+ Initialize totalTemp as 0
+
+ For each date in dates:
+ Append date, minTemp, maxTemp, and weatherType to averageDetails
+ Add minTemp and maxTemp to totalTemp
+ If dates is not empty:
+ Calculate averageTemp as totalTemp / number of days
+ Else:
+ Set averageTemp to 0
+ Display weatherDetails in weatherDetailsTextView
+ Display averageTemp in averageTextView
+ On backButton click:
+ Finish current activity and navigate back to MainActivity
